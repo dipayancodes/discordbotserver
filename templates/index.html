@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Executor</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Upload Python File</h1>
+    <form id="uploadForm" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+
+    <h2>Execute Python Script</h2>
+    <form id="executeForm">
+        <input type="text" name="filename" placeholder="Enter filename">
+        <button type="submit">Execute</button>
+    </form>
+
+    <h2>Output</h2>
+    <pre id="output"></pre>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
+
