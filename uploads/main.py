@@ -6,6 +6,8 @@ from commands.marketing import trend
 from commands.marketing import keyword as keyword_module
 # from keep_alive import keep_alive
 
+token = os.getenv(token)
+
 
 intents = discord.Intents.all()
 intents.message_content = True
@@ -73,4 +75,4 @@ async def on_message(message):
 
 # keep_alive()
 # my_secret = os.environ['BOT_TOKEN']
-client.run("MTE3MzU5Mzc4ODcxMTcwNjgyNA.GcrDhC.oD7hAYIjf-IbTF71o_RExmkWLiDehERleWttZA")
+client.run(token)
